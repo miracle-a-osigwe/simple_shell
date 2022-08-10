@@ -20,8 +20,7 @@ int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 alias_t *temp = aliases;
 int i, ret = 0;
 char *value;
-if (!args[0])
-	
+if (!args[0])	
 {
 while (temp)
 {
@@ -125,7 +124,6 @@ char **replace_aliases(char **args)
 alias_t *temp;
 int i;
 char *new_value;
-	
 if (_strcmp(args[0], "alias") == 0)
 return (args);
 for (i = 0; args[i]; i++)
