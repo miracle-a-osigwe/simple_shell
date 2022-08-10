@@ -118,8 +118,7 @@ ssize_t get_new_len(char *line)
 
 size_t i;
 ssize_t new_len = 0;
-char current, next;
-	
+char current, next;	
 for (i = 0; line[i]; i++)
 {
 current = line[i];
