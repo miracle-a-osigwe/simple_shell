@@ -32,11 +32,11 @@ extern char **environ;
 
 /* Global program name */
 
-extern char *name;
+char *name;
 
 /* Global history counter */
 
-extern int hist;
+int hist;
 
 
 
