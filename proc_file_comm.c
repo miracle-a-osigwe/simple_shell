@@ -20,7 +20,8 @@ int proc_file_commands(char *file_path, int *exe_ret);
 int cant_open(char *file_path)
 
 {
-
+        int hist;
+        char *name;
 	char *error, *hist_str;
 
 	int len;
@@ -86,7 +87,7 @@ int cant_open(char *file_path)
 int proc_file_commands(char *file_path, int *exe_ret)
 
 {
-
+        int hist;
 	ssize_t file, b_read, i;
 
 	unsigned int line_size = 0;
