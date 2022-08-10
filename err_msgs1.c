@@ -17,9 +17,10 @@ char *error_2_syntax(char **args);
 
 char *error_env(char **args)
 {
-
+        char *name;
 	char *error, *hist_str;
 	int len;
+        int hist;
 
 
 	hist_str = _itoa(hist);
@@ -71,6 +72,7 @@ char *error_env(char **args)
 char *error_1(char **args)
 
 {
+        char *name;
 	char *error;
 	int len;
 
@@ -104,7 +106,9 @@ char *error_2_exit(char **args)
 
 {
 
+        int hist;
 	char *error, *hist_str;
+        char *name;
 	int len;
 
 
@@ -155,6 +159,8 @@ char *error_2_exit(char **args)
 char *error_2_cd(char **args)
 
 {
+        int hist;
+        char *name;
 	char *error, *hist_str;
 	int len;
 
@@ -217,6 +223,8 @@ char *error_2_cd(char **args)
 char *error_2_syntax(char **args)
 
 {
+        int hist;
+        char *name;
 	char *error, *hist_str;
 	int len;
 
