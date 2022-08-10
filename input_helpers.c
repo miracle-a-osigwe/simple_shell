@@ -21,7 +21,7 @@ int check_args(char **args);
 char *get_args(char *line, int *exe_ret)
 
 {
-
+        int hist;
 	size_t n = 0;
 
 	ssize_t read;
@@ -195,7 +195,7 @@ int run_args(char **args, char **front, int *exe_ret)
 {
 
 	int ret, i;
-
+        int hist;
 	int (*builtin)(char **args, char **front);
 
 
