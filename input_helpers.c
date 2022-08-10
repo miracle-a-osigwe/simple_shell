@@ -343,35 +343,18 @@ int check_args(char **args)
 
 {
 
-	size_t i;
-	char *cur, *nex;
-
-
-
-	for (i = 0; args[i]; i++)
-
-	{
-
-		cur = args[i];
-
-		if (cur[0] == ';' || cur[0] == '&' || cur[0] == '|')
-
-		{
-
-			if (i == 0 || cur[1] == ';')
-
-				return (create_error(&args[i], 2));
-
-			nex = args[i + 1];
-
+size_t i;
+char *cur, *nex;
+for (i = 0; args[i]; i++)
+{
+cur = args[i];
+if (cur[0] == ';' || cur[0] == '&' || cur[0] == '|')
+{if (i == 0 || cur[1] == ';')
+return (create_error(&args[i], 2));
+nex = args[i + 1];
 if (nex && (nex[0] == ';' || nex[0] == '&' || nex[0] == '|'))
-
-				return (create_error(&args[i + 1], 2));
-
-		}
-
-	}
-
-	return (0);
-
+return (create_error(&args[i + 1], 2));
+}
+}
+return (0);
 }
