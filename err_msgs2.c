@@ -17,6 +17,8 @@ char *error_127(char **args);
 char *error_126(char **args)
 
 {
+        int hist;
+        char *name;
 	char *error, *hist_str;
 	int len;
 
@@ -71,6 +73,8 @@ char *error_126(char **args)
 char *error_127(char **args)
 
 {
+        int hist;
+        char *name
 	char *error, *hist_str;
 	int len;
 
