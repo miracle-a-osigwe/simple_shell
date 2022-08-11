@@ -51,6 +51,7 @@ void *add_nodeint(history_t **head, char *str)
 void free_listint(history_t *head)
 {
 	history_t *delete;
+	
 	if (!head)
 		return;
 	while (head)
