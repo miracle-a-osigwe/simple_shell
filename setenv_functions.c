@@ -22,7 +22,7 @@ char *add_value(char *key, char *value)
 	for (i = 0; key[i] != '\0'; i++)
 		new[i] = key[i];
 	new[i] = '=';
-	for (j = 0; value[j] != '\0'; j++
+	for (j = 0; value[j] != '\0'; j++)
 		new[i + 1 + j] = value[j];
 	new[i + 1 + j] = '\0';
 	return (new);
