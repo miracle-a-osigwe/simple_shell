@@ -108,7 +108,7 @@ void new_history(vars_t *vars)
 			print_message("  ");
 			_puts3(tmp2->str);
 			tmp2 = tmp2->next;
-			z++
+			z++;
 			free(count);
 		}
 		tmp2 = tmp2->next;
