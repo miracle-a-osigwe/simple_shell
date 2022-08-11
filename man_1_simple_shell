@@ -1,6 +1,6 @@
-.TH SHELLBY 1 "August 2022" "ALX School" "0x15. C - Simple Shell"
+.TH SHELLBY 1 "July 2022" "ALX AFRICA" "0x16. C - Simple Shell"
 
-SH NAME
+.SH NAME
 
 .B shellby\fR \- simple UNIX command interpreter
 
@@ -105,8 +105,6 @@ the shell executes the named program with any remaining arguments given in a sep
 If a command is not found, the return status is 127; if a command is found but is not executable, the return status is 126.
 
 
-
-All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message).
 
 .in
 
@@ -359,4 +357,5 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 This man page borrows from the corresponding man pages sh(1) and dash(1).
 
 .SH AUTHOR
-EGBERONGBE Amir and
+
+Egberongbe Amir and
