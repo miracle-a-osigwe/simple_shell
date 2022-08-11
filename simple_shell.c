@@ -30,19 +30,16 @@ int main(int argc __attribute__((unused)), char **argv, char **environment)
 	unsigned int is_pipe = 0;
 
 	vars_t vars = {NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL};
-
 	vars.argv = argv;
 
 	vars.env = make_enviroment(environment);
 
 	signal(SIGINT, sig_handler);
-
 	if (!isatty(STDIN_FILENO))
 		is_pipe = 1;
 	if (is_pipe == 0)
 		_puts("$ ");
 	sig_flag = 0;
-
 	while (getline(&(vars.buffer), &len_buffer, stdin) != -1)
 	{
 		vars.counter++;
