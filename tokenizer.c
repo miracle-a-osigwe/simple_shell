@@ -45,7 +45,7 @@ char **tokenizer(char *buffer, char *delimiter)
  * @token_count: token count, size.
  * Return: pointer to an array of pointers to the tokens
  */
-har **tokenize(int token_count, char *line, const char *delimiter)
+char **tokenize(int token_count, char *line, const char *delimiter)
 
 {
 	int i;
