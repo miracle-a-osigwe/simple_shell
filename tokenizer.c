@@ -78,9 +78,9 @@ har **tokenize(int token_count, char *line, const char *delimiter)
 char **token_interface(char *line, const char *delimiter, int token_count)
 {
 	vars_t vars;
-	
+
 	token_count = count_token(line, delimiter);
-	
+
 	if (token_count == -1)
 	{
 		free(line);
