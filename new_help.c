@@ -194,5 +194,5 @@ void new_help_env(vars_t *vars)
 		fd = close(fd);
 	}
 	else
-		new_help_history(vars);
+		new_help_help(vars);
 }
